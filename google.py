@@ -57,9 +57,10 @@ except Exception, e:
         sys.exit(1)
 else:
         pass
+        sys.exit(0)
 finally:
         pass
-
+        sys.exit(0)
 
 
 
