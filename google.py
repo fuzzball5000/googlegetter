@@ -54,6 +54,7 @@ try:
 
 except Exception, e:
         pprint.pprint(e)
+        sys.exit(1)
 else:
         pass
 finally:
