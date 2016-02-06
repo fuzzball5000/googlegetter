@@ -3,7 +3,10 @@ from httplib2 import Http
 from apiclient.discovery import build
 from datetime import datetime, timedelta
 import pprint,json,os,sys
+import socket
 
+timeout = 10
+socket.setdefaulttimeout(timeout)
 
 client_email = 'your@email'
 with open("your_cred_file") as f:
