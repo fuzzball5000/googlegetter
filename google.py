@@ -7,6 +7,7 @@ import socket
 
 timeout = 10
 socket.setdefaulttimeout(timeout)
+#Because who needs a reliable network?
 
 client_email = 'your@email'
 with open("your_cred_file") as f:
@@ -57,13 +58,13 @@ try:
 
 except Exception, e:
         pprint.pprint(e)
-        sys.exit(1)
+
 else:
         pass
-        sys.exit(0)
+
 finally:
         pass
-        sys.exit(0)
+sys.exit()
 
 
 
